@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULTRON - Virtual Assistant</title>
+    <link rel="shortcut icon" href="avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="O1SC.gif" alt="image">
+            </div>
+            <h1>U L T R O N</h1>
+            <p>I am ULTRON, virtual assistant of Boss ARULDASS. How may I assist you, Sir?</p>
+        </div>
+        <div class="response-container">
+            <div class="input">
+                <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+                <h2 class="content">Click here to speak</h2>
+                <button class="stop"><i class="fas fa-stop"></i></button>
+                <select id="language-select">
+                    <option value="en-US">English</option>
+                    <option value="ta-IN">Tamil</option>
+                    <option value="hi-IN">hindi</option>
+                    <option value="es-ES">spain</option>
+                    <option value="fr-FR">French</option>
+                    <option value="de-DE">German</option>
+                    <option value="te-IN">telugu</option>
+
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>
+            <div class="response-tab">
+                <p class="response-text">Response will be displayed here...</p>
+            </div>
+            <div class="manual-input">
+                <textarea id="text-input" placeholder="Type your input..."></textarea>
+                <button id="submit-text">Submit</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
