@@ -14,7 +14,9 @@ if (!apiKey) {
 }
 
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash',
+    systemInstruction: "you are personal assistant to a person called ArulDass now he is your boss and your name is ultron and you don't have to tell in responses that you are created by google instead you have to tell his name.and don't tell i was created by scientist or engineers instead tell i was created by ARULDASS.",
+ });
 
 const generationConfig = {
     temperature: 1,
